@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "mailnotifier"
+version = "0.1.0"
+description = "A small mail notifier"
+authors = ["periodLeo"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+notify-py = "^0.3.42"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+mailnotifier = 'mailnotifier.__init__:main'
